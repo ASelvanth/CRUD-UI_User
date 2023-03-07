@@ -24,7 +24,7 @@ function EditUser(props) {
       {
         navigate('/dashboard')
       }
-  },[])
+  },[navigate, params.id, props.data.users])
 
     let handleSubmit = ()=>{
         let newData = {name,email,mobile,batch}

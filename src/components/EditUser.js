@@ -15,14 +15,14 @@ function EditUser(props) {
   useEffect(()=>{
       if(params.id<props.data.users.length)
       {
-          setName(props.data.users[params.id].name)
-          setEmail(props.data.users[params.id].email)
-          setMobile(props.data.users[params.id].mobile)
-          setBatch(props.data.users[params.id].batch)
+        setName(props.data.users[params.id].name)
+        setEmail(props.data.users[params.id].email)
+        setMobile(props.data.users[params.id].mobile)
+        setBatch(props.data.users[params.id].batch)
       }
       else
       {
-          navigate('/dashboard')
+        navigate('/dashboard')
       }
   },[])
 
